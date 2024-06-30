@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-black">
 
-<head>
-  <meta charset="UTF-8">
-  <title> Ekam's Website </title>
-  <!-- Include htmx library -->
-  <script src="/static/lib/htmx.js"></script>
-  <link href="/static/output.css" rel="stylesheet">
-</head>
-<style>
-.demo.faded {
-  opacity:.3;
-}
-.demo {
-  opacity:1;
-  transition: opacity ease-in 900ms;
-}
-</style>
-<body>
-  <h1>Welcome to HTMX Example</h1>
-<div class="demo" classes="toggle faded:1s">Toggle Demo</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Ekam's Website </title>
+    <!-- Include htmx library -->
+    <script src="/static/lib/htmx.js"></script>
+    <link href="/static/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      id="navbar"
+      hx-get="/static/navbar.html"
+      hx-target="#navbar"
+      hx-swap="outerHTML"
+      hx-trigger="load"
+    ></div>
+  </body>
 
 </html>
