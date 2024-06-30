@@ -5,9 +5,9 @@ use rocket_dyn_templates::{context, handlebars, Template};
 use self::handlebars::{Handlebars, JsonRender};
 #[get("/")]
 pub fn index() -> Template {
-    Template::render("home", context! {Test : "Yo"})
+    Template::render("home", context! {})
 }
-
+//let's handlebars do it's thing
 fn wow_helper(
     h: &handlebars::Helper<'_>,
     _: &handlebars::Handlebars,

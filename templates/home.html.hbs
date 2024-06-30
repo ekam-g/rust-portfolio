@@ -3,17 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>{{ Test }}</title>
+  <title> Ekam's Website </title>
   <!-- Include htmx library -->
-  <script src="https://unpkg.com/htmx.org"></script>
+  <script src="/static/lib/htmx.js"></script>
 </head>
-
+<style>
+#fade-me-in.htmx-added {
+  opacity: 0;
+}
+#fade-me-in {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+</style>
 <body>
   <h1>Welcome to HTMX Example</h1>
   <div id="content">
     Loading...
   </div>
   <button hx-get="/data" hx-trigger="click" hx-target="#content">Load Data</button>
+  <button id="fade-me-in"
+        class="btn primary"
+        hx-post="/fade_in_demo"
+        hx-swap="outerHTML settle:1s">
+        Fade Me In
+</button>
+
 </body>
 
 </html>
