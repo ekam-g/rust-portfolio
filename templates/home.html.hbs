@@ -6,29 +6,20 @@
   <title> Ekam's Website </title>
   <!-- Include htmx library -->
   <script src="/static/lib/htmx.js"></script>
+  <link href="/static/output.css" rel="stylesheet">
 </head>
 <style>
-#fade-me-in.htmx-added {
-  opacity: 0;
+.demo.faded {
+  opacity:.3;
 }
-#fade-me-in {
-  opacity: 1;
-  transition: opacity 1s ease-out;
+.demo {
+  opacity:1;
+  transition: opacity ease-in 900ms;
 }
 </style>
 <body>
   <h1>Welcome to HTMX Example</h1>
-  <div id="content">
-    Loading...
-  </div>
-  <button hx-get="/data" hx-trigger="click" hx-target="#content">Load Data</button>
-  <button id="fade-me-in"
-        class="btn primary"
-        hx-post="/fade_in_demo"
-        hx-swap="outerHTML settle:1s">
-        Fade Me In
-</button>
-
+<div class="demo" classes="toggle faded:1s">Toggle Demo</div>
 </body>
 
 </html>

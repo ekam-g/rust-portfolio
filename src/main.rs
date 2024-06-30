@@ -9,7 +9,7 @@ extern crate rocket;
 fn rocket() -> _ {
     rocket::build()
         .mount("/", routes![index])
-        .mount("/static",  FileServer::from(relative!("/static")))
+        .mount("/static",  FileServer::from(relative!("/templates/static")))
         .attach(Template::custom(|engines| {
             pages::customize(&mut engines.handlebars);
         }))
