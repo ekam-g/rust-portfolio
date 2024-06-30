@@ -25,18 +25,4 @@ fn wow_helper(
 }
 pub fn customize(hbs: &mut Handlebars) {
     hbs.register_helper("wow", Box::new(wow_helper));
-    hbs.register_template_string(
-        "hbs/about.html",
-        r#"
-        {{#*inline "page"}}
-
-        <section id="about">
-          <h1>About - Here's another page!</h1>
-        </section>
-
-        {{/inline}}
-        {{> hbs/layout}}
-    "#,
-    )
-    .expect("valid HBS template");
 }
