@@ -591,6 +591,10 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -657,6 +661,22 @@ video {
   }
 }
 
+h1 {
+  color: whitesmoke;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
 .hover\:text-neutral-500:hover {
   --tw-text-opacity: 1;
   color: rgb(115 115 115 / var(--tw-text-opacity));
@@ -695,3 +715,4 @@ video {
     padding-inline-start: 1.25rem;
   }
 }
+  
