@@ -694,6 +694,57 @@ h4 {
   color: lightgray;
 }
 
+.typing {
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.typing::before {
+  content: attr(data-text);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition-property: opacity, transform;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+}
+
+.typing.is-typing {
+  animation: typing 3s steps(20) infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "Hello";
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  11.5% {
+    content: "";
+  }
+
+  12.5% {
+    opacity: 1;
+  }
+
+  13.5% {
+    content: "World";
+  }
+
+  23.5% {
+    opacity: 0;
+  }
+}
+
+.typing.is-typing:nth-child(2n+1) {
+}
+
 .hover\:text-neutral-500:hover {
   --tw-text-opacity: 1;
   color: rgb(115 115 115 / var(--tw-text-opacity));
@@ -732,4 +783,3 @@ h4 {
     padding-inline-start: 1.25rem;
   }
 }
-  
