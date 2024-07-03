@@ -15,15 +15,17 @@
     }
   }
   h1 {
-    color: whitesmoke;
+    color: white;
   }
   h2 {
     color: white;
+    font-size: 50px;
   }
   h3 {
     color: white;
   }
   h4 {
-    color: white;
+    color: lightgray;
+
   }
   

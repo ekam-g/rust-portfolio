@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -567,8 +571,8 @@ video {
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -599,8 +603,8 @@ video {
   align-items: center;
 }
 
-.justify-around {
-  justify-content: space-around;
+.justify-center {
+  justify-content: center;
 }
 
 .gap-5 {
@@ -622,8 +626,8 @@ video {
   padding-bottom: 1rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .text-sm {
@@ -674,11 +678,12 @@ video {
 }
 
 h1 {
-  color: whitesmoke;
+  color: white;
 }
 
 h2 {
   color: white;
+  font-size: 50px;
 }
 
 h3 {
@@ -686,7 +691,7 @@ h3 {
 }
 
 h4 {
-  color: white;
+  color: lightgray;
 }
 
 .hover\:text-neutral-500:hover {

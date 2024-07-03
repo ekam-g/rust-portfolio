@@ -8,14 +8,8 @@
   <script src="/static/lib/htmx.js"></script>
   <link href="/static/output.css" rel="stylesheet" />
 </head>
-
 <body>
-  <div class="h-screen flex  flex-wrap  flex-col items-center justify-around">
     <div id="navbar" hx-get="/static/navbar.html" hx-target="#navbar" hx-swap="outerHTML" hx-trigger="load"></div>
-      <div id="title" hx-get="/static/home/title.html" hx-target="#title" hx-swap="outerHTML" hx-trigger="load"></div>
-      <div id="title2" hx-get="/static/home/title.html" hx-target="#title2" hx-swap="outerHTML" hx-trigger="load"></div>
-    </div>
-  </div>
+    <div id="title" hx-get="/static/home/title.html" hx-target="#title" hx-swap="outerHTML" hx-trigger="load"></div>
 </body>
-
 </html>
