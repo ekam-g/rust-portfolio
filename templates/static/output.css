@@ -571,8 +571,16 @@ video {
   display: flex;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-full {
   height: 100%;
+}
+
+.w-52 {
+  width: 13rem;
 }
 
 .w-full {
@@ -624,10 +632,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
 }
 
 .text-sm {
@@ -694,55 +698,66 @@ h4 {
   color: lightgray;
 }
 
-.typing {
-  font-size: 36px;
-  font-family: Arial, sans-serif;
-  display: inline-block;
+.rotatingText {
+  text-align: center;
   position: relative;
 }
 
-.typing::before {
-  content: attr(data-text);
-  white-space: nowrap;
+.rotatingText-adjective {
+  left: 0;
   opacity: 0;
-  transform: translateY(-100%);
-  transition-property: opacity, transform;
-  transition-duration: .5s;
-  transition-timing-function: ease-out;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
 }
 
-.typing.is-typing {
-  animation: typing 3s steps(20) infinite;
+.rotatingText-adjective:nth-of-type(1) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
 }
 
-@keyframes typing {
+.rotatingText-adjective:nth-of-type(2) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+}
+
+.rotatingText-adjective:nth-of-type(3) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
   0% {
-    content: "Hello";
     opacity: 0;
+    transform: translate3d(0, 50px, 0);
   }
 
-  10% {
+  20%, 80% {
     opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 
-  11.5% {
-    content: "";
-  }
-
-  12.5% {
-    opacity: 1;
-  }
-
-  13.5% {
-    content: "World";
-  }
-
-  23.5% {
+  100% {
     opacity: 0;
+    transform: translate3d(0, -25px, 0);
   }
 }
 
-.typing.is-typing:nth-child(2n+1) {
+@keyframes rotate-last {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  50%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .hover\:text-neutral-500:hover {
