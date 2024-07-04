@@ -571,16 +571,12 @@ video {
   display: flex;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .h-full {
   height: 100%;
 }
 
-.w-52 {
-  width: 13rem;
+.w-6\/12 {
+  width: 50%;
 }
 
 .w-full {
@@ -609,6 +605,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -657,6 +657,11 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .text-neutral-400 {
   --tw-text-opacity: 1;
   color: rgb(163 163 163 / var(--tw-text-opacity));
@@ -665,6 +670,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-300 {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity));
+}
+
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .fade {
@@ -683,11 +698,13 @@ video {
 
 h1 {
   color: white;
+  font-size: 70px;
 }
 
 h2 {
   color: white;
   font-size: 50px;
+  font-weight: bolder;
 }
 
 h3 {
@@ -698,65 +715,34 @@ h4 {
   color: lightgray;
 }
 
-.rotatingText {
-  text-align: center;
-  position: relative;
+.typewriter {
+  overflow: hidden;
+  border-right: .1em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
 }
 
-.rotatingText-adjective {
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-}
-
-.rotatingText-adjective:nth-of-type(1) {
-  animation-name: rotate;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-}
-
-.rotatingText-adjective:nth-of-type(2) {
-  animation-name: rotate;
-  animation-duration: 1.5s;
-  animation-delay: 1.75s;
-}
-
-.rotatingText-adjective:nth-of-type(3) {
-  animation-name: rotate-last;
-  animation-duration: 1.5s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes rotate {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 50px, 0);
+@keyframes typing {
+  from {
+    width: 0
   }
 
-  20%, 80% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translate3d(0, -25px, 0);
+  to {
+    width: 100%
   }
 }
 
-@keyframes rotate-last {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 50px, 0);
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
   }
 
-  50%, 100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+  50% {
+    border-color: white;
   }
 }
 
