@@ -1,16 +1,36 @@
 <html lang="en" class="bg-black">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Ekam Ghai </title>
-  <!-- Include htmx library -->
-  <script src="/static/lib/htmx.js"></script>
-  <link href="/static/lib/output.css" rel="stylesheet" />
-</head>
-<body>
-    <div id="navbar" hx-get="/static/navbar.html" hx-target="#navbar" hx-swap="outerHTML" hx-trigger="load"></div>
-    <div id="title" hx-get="/static/title.html" hx-target="#title" hx-swap="outerHTML" hx-trigger="load"></div>
-    <div id="about" hx-get="/static/about.html" hx-target="#about" hx-swap="outerHTML" hx-trigger="load"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Ekam Ghai </title>
+    <!-- Include htmx library -->
+    <script src="/static/lib/htmx.js"></script>
+    <link href="/static/lib/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      id="navbar"
+      hx-get="/static/navbar.html"
+      hx-target="#navbar"
+      hx-swap="outerHTML"
+      hx-trigger="load"
+    ></div>
+    <div>
+      <div
+        id="title"
+        hx-get="/static/title.html"
+        hx-target="#title"
+        hx-swap="outerHTML"
+        hx-trigger="load"
+      ></div>
+      <div
+        id="about"
+        hx-get="/static/about.html"
+        hx-target="#about"
+        hx-swap="outerHTML"
+        hx-trigger="load"
+      ></div>
+    </div>
+  </body>
 </html>

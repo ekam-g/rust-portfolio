@@ -39,4 +39,6 @@
     color: lightgray;
 
   }
-
+.content-window {
+  @apply fade2 h-full flex flex-wrap flex-col items-center justify-center border-orange-300 border-b-2;
+}
