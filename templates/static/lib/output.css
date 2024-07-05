@@ -730,7 +730,7 @@ video {
 }
 
 .fade {
-  animation: fadeIn 1s;
+  animation: fadeIn .5s;
 }
 
 @keyframes fadeIn {
@@ -763,6 +763,10 @@ h3 {
 
 h4 {
   color: lightgray;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .content-window {
