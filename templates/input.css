@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .fade2{
-  animation: fadeIn 3s;
+  animation: fadeIn 2s;
 }
 
 .fade3{
-  animation: fadeIn 5s;
+  animation: fadeIn 4s;
 }
 
 .fade {
