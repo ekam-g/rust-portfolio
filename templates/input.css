@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 .fade2{
-  animation: fadeIn 2s;
+  animation: fadeIn 1s;
 }
 
 .fade3{
-  animation: fadeIn 4s;
+  animation: fadeIn 3s;
 }
 
 .fade {
-    animation: fadeIn .5s;
+    animation: fadeIn 0.5s;
   }
   
   @keyframes fadeIn {

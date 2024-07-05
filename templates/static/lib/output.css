@@ -722,15 +722,15 @@ video {
 }
 
 .fade2{
-  animation: fadeIn 2s;
+  animation: fadeIn 1s;
 }
 
 .fade3{
-  animation: fadeIn 4s;
+  animation: fadeIn 3s;
 }
 
 .fade {
-  animation: fadeIn .5s;
+  animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
@@ -779,7 +779,7 @@ html {
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(253 186 116 / var(--tw-border-opacity));
-  animation: fadeIn 2s;
+  animation: fadeIn 1s;
 }
 
 .hover\:bg-orange-300:hover {
