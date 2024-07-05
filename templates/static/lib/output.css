@@ -571,6 +571,10 @@ video {
   display: flex;
 }
 
+.w-5\/12 {
+  width: 41.666667%;
+}
+
 .w-6\/12 {
   width: 50%;
 }
@@ -615,6 +619,14 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -641,6 +653,10 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.p-14 {
+  padding: 3.5rem;
 }
 
 .px-4 {
@@ -745,6 +761,7 @@ video {
 
 h1 {
   color: white;
+  font-weight: bold;
   text-wrap: nowrap;
   font-size: 4.5rem;
   line-height: 1;
@@ -754,7 +771,7 @@ h1 {
 h2 {
   color: white;
   font-size: 50px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 h3 {
@@ -772,7 +789,6 @@ html {
 .content-window {
   display: flex;
   height: 100%;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

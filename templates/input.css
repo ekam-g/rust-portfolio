@@ -24,13 +24,14 @@
   }
   h1 {
     color: white;
+    font-weight: bold;
     @apply text-7xl text-nowrap;
     /*later add md:(smaller text) for reactivity*/
   }
   h2 {
     color: white;
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: bold;
   }
   h3 {
     color: white;
@@ -43,5 +44,5 @@
     scroll-behavior: smooth;
   }
 .content-window {
-  @apply fade2 h-full flex flex-wrap flex-col items-center justify-center border-orange-300 border-b-2;
+  @apply fade2 h-full flex flex-wrap items-center justify-center border-orange-300 border-b-2;
 }
