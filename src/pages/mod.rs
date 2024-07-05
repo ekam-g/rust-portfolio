@@ -1,3 +1,5 @@
+pub mod about_page;
+
 use rocket::get;
 
 use self::handlebars::{Handlebars, JsonRender};
@@ -5,6 +7,7 @@ use rocket::fs::NamedFile;
 use rocket_dyn_templates::{context, handlebars, Template};
 use std::path::Path;
 use rocket::fs::relative;
+
 
 #[get("/")]
 pub fn index() -> Template {
