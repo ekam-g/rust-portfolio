@@ -631,6 +631,15 @@ video {
   border-width: 2px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-orange-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 186 116 / var(--tw-border-opacity));
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -731,7 +740,10 @@ video {
 
 h1 {
   color: white;
-  font-size: 70px;
+  text-wrap: nowrap;
+  font-size: 4.5rem;
+  line-height: 1;
+  /*later add md:(smaller text) for reactivity*/
 }
 
 h2 {
@@ -746,11 +758,6 @@ h3 {
 
 h4 {
   color: lightgray;
-}
-
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-orange-300:hover {
