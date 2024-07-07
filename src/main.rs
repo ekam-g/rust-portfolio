@@ -14,7 +14,8 @@ fn rocket() -> _ {
         about_page::update_uptime();
     });
     rocket::build()
-        .mount("/", routes![index, icon, about_page::render])
+        .mount("/", routes![index, icon])
+        .mount("/about", routes![about_page::render, about_page::langs])
         .mount("/static",  FileServer::from(relative!("/templates/static")))
         .attach(Template::custom(|engines| {
             pages::customize(&mut engines.handlebars);
