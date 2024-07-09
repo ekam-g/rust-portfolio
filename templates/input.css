@@ -35,6 +35,7 @@
   }
   h3 {
     color: white;
+    font-size: 30px;
   }
   h4 {
     color: lightgray;
@@ -44,5 +45,5 @@
     scroll-behavior: smooth;
   }
 .content-window {
-  @apply fade2 h-full flex flex-wrap items-center justify-center border-orange-300 border-b-2;
+  @apply w-full fade2 h-full flex flex-wrap items-center justify-center border-orange-300 border-b-2;
 }
