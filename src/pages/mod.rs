@@ -1,5 +1,5 @@
 pub mod about_page;
-
+pub mod content;
 use rocket::get;
 
 use self::handlebars::{Handlebars, JsonRender};
