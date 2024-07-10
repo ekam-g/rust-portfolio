@@ -597,12 +597,29 @@ video {
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
 .flex {
   display: flex;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
+.h-2\/6 {
+  height: 33.333333%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-24 {
@@ -623,6 +640,10 @@ video {
 
 .w-1\/5 {
   width: 20%;
+}
+
+.w-3\/12 {
+  width: 25%;
 }
 
 .max-w-4xl {
@@ -659,6 +680,10 @@ video {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
