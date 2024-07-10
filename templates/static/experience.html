@@ -1,67 +1,51 @@
-<div class="content-window">
-  <div class="w-5/12 justify-start border rounded-lg border-orange-300">
+<div class="content-window flex justify-center items-center my-auto">
+  <div class="w-5/12  border rounded-lg border-orange-300">
     <div class="p-14">
-      <h2>Experience</h2>
-      <h3>Meta</h3>
-      <h4 class="text-xs">May 2023 - September 2023</h4>
-      <ul>
-        <li>
-          <h4 class="text-xs">
-            <span class="text-orange-300 font-extrabold text-xl">> </span
-            >Completed an intensive 12-week curriculum focused on core
-            Production Engineering topics, augmented by industry expert-hosted
-            events and workshops.
-          </h4>
-        </li>
-        <li>
-          <h4 class="text-xs">
-            <span class="text-orange-300 font-extrabold text-xl">> </span
-            >Developed an open-source personal portfolio website template using
-            a tech stack that includes Python, Flask, Jinja, MySQL, Nginx, and
-            unittest.
-          </h4>
-        </li>
-        <li>
-          <h4 class="text-xs">
-            <span class="text-orange-300 font-extrabold text-xl">> </span
-            >Streamlined development processes through automated testing and
-            deployment workflows via CI/CD.
-          </h4>
-        </li>
-        <li>
-          <h4 class="text-xs">
-            <span class="text-orange-300 font-extrabold text-xl">> </span
-            >Established robust system and container monitoring, alerting, and
-            visualization utilizing Prometheus and Grafana.
-          </h4>
-        </li>
-      </ul>
+      <h2 class="">Experience</h2>
+      <div
+        id="content"
+        hx-get="/experience/0"
+        hx-target="#content"
+        hx-swap="outerHTML"
+        hx-trigger="load"
+      ></div>
       <div class="w-full row justify-around pt-6">
         <button
-          class="w-1/5 fade3 bg-transparent border-white border-2 rounded py-2 px-4 text-white hover:bg-orange-300"
-          onclick="window.location.href='/static/assets/Resume.pdf';"
+          class="w-1/5 fade3 bg-transparent border-white border-2 rounded py-2 px-4 text-white hover:bg-white hover:text-black"
+          hx-get="/experience/0"
+          hx-target="#content"
+          hx-swap="outerHTML"
+          hx-trigger="click"
         >
           Meta
         </button>
         <button
-          class="w-1/5 fade3 bg-transparent border-white border-2 rounded py-2 px-4 text-white hover:bg-orange-300"
-          onclick="window.location.href='/static/assets/Resume.pdf';"
+          class="w-1/5 fade3 bg-transparent border-white border-2 rounded py-2 px-4 text-white hover:bg-white hover:text-black"
+          hx-get="/experience/1"
+          hx-target="#content"
+          hx-swap="outerHTML"
+          hx-trigger="click"
         >
-          Meta
+          Zipline
         </button>
         <button
-          class="w-1/5 fade3 bg-transparent border-white border-2 rounded py-2 px-4 text-white hover:bg-orange-300"
-          onclick="window.location.href='/static/assets/Resume.pdf';"
+          class="w-1/5 fade3 bg-transparent border-white border-2 rounded py-2 px-4 text-white hover:bg-white hover:text-black"
+          hx-get="/experience/2"
+          hx-target="#content"
+          hx-swap="outerHTML"
+          hx-trigger="click"
         >
-          Meta
+          MLH
         </button>
         <button
-          class="w-1/5 fade3 bg-transparent border-white border-2 rounded py-2 px-4 text-white hover:bg-orange-300"
-          onclick="window.location.href='/static/assets/Resume.pdf';"
+          class="w-1/5 fade3 bg-transparent border-white border-2 rounded py-2 px-4 text-white hover:bg-white hover:text-black"
+          hx-get="/experience/3"
+          hx-target="#content"
+          hx-swap="outerHTML"
+          hx-trigger="click"
         >
-          Meta
+          Coder School
         </button>
-        
       </div>
     </div>
   </div>
